@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#282828">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEMBERS MANAGEMENT"
+            android:layout_marginTop="7dp"
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"
+                android:background="#5d5d5d"
+                android:padding="10dp"
+                android:hint="USERNAME"
+                android:textSize="16sp"
+                android:id="@+id/usernameEdt" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="PASSWORD"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"
+                android:background="#5d5d5d"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="top|left"
+                android:id="@+id/passwordEdt" />
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="FULLNAME"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="5dp"
+            android:id="@+id/fullnameEdt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Date of birth:"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true" />
+            <DatePicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:scaleType = "fitXY"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/dobpicker"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:layout_marginLeft="5dp"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical" />
+            <Spinner
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:background="#5d5d5d"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/genderspinner" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Role:"
+            android:layout_marginLeft="5dp"
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical" />
+        <Spinner
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:layout_gravity="top|center"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/rolespinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="2dp"
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addBtn"
+                android:text="Add"
+                android:background="@android:color/holo_green_dark" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/updateBtn"
+                android:text="Update"
+                android:background="@android:color/holo_green_dark"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="2dp"
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/deleteBtn"
+                android:text="Delete"
+                android:background="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pbbar" />
+
+        <ListView
+            android:id="@+id/memberlst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="1dp"
+            android:padding="5dp">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
